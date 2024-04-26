@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../master 04-auth/auth"
+		},
+		{
+			"path": "../master 04-auth/config"
+		},
+		{
+			"path": "../master 04-auth/controller"
+		},
+		{
+			"path": "../master 04-auth/routes"
+		},
+		{
+			"path": "../master 04-auth/service"
+		}
+	],
+	"settings": {}
+}
