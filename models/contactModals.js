@@ -1,12 +1,12 @@
-import { Schema, model } from "mongoose";
-import handleMongooseError from "../helpers/handleMongooseError.js";
-import Joi from "joi";
+import { Schema, model } from 'mongoose';
+import handleMongooseError from '../helpers/handleMongooseError.js';
+import Joi from 'joi';
 
 export const contactSchema = new Schema(
   {
     name: {
       type: String,
-      required: [true, "Set name for contact"],
+      required: [true, 'Set name for contact'],
     },
     email: {
       type: String,
@@ -21,7 +21,7 @@ export const contactSchema = new Schema(
     },
     owner: {
       type: Schema.Types.ObjectId,
-      ref: "User",
+      ref: 'User',
       required: true,
     },
   },
@@ -44,5 +44,5 @@ export const updFavoriteSchema = Joi.object({
   favorite: Joi.boolean().required(),
 });
 
-contactSchema.post("save", handleMongooseError);
-export const Contact = model("contacts", contactSchema);
+contactSchema.post('save', handleMongooseError);
+export const Contact = model('contacts', contactSchema);
